@@ -1,0 +1,19 @@
+<form class="man" [formGroup]="countryForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill" class="custom">
+    <mat-label>Country Name</mat-label>
+    <input matInput id="name" type="text" formControlName="name" required />
+    <mat-error *ngIf="countryForm.controls['name'].hasError('required')">
+      Name is required.
+    </mat-error>
+    <mat-error *ngIf="countryForm.controls['name'].hasError('maxlength')">
+      Name cannot be more than 255 characters.
+    </mat-error>
+    <mat-error *ngIf="countryForm.controls['name'].hasError('whitespace')">
+      Name cannot be empty or consist only of spaces.
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" color="primary" [disabled]="countryForm.invalid">
+    Save
+  </button>
+</form>

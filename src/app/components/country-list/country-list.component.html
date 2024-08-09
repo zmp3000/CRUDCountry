@@ -1,0 +1,11 @@
+<div class="country-list-container">
+  <div *ngFor="let country of countries" class="country-item">
+    <div *ngIf="!editingCountryId || editingCountryId !== country.id">
+      <span (click)="startEditing(country.id)">{{ country.name }}</span>
+      <button mat-raised-button (click)="deleteCountry(country.id)">Delete</button>
+    </div>
+    <div *ngIf="editingCountryId === country.id">
+      <input [(ngModel)]="country.name" (blur)="saveCountry(country)" />
+    </div>
+  </div>
+</div>

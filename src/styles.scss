@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(77, 207, 229, 1) 0%,
+    rgba(225, 42, 148, 1) 100%
+  );
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .man {
+      flex-direction: column;
+      padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

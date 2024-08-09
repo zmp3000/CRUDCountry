@@ -1,0 +1,28 @@
+.man{
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-error {
+  color: #373333;
+  font-size: 14px; 
+  font-weight: bold;
+}
+
+.custom{
+  width: 170px;
+  margin-right: 50%; 
+}
+
+button{
+  margin-right: 10px;
+}
+
+button[mat-raised-button][disabled] {
+  opacity: 0.1; 
+}

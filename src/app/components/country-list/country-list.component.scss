@@ -1,0 +1,21 @@
+.country-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.country-item span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.country-item button {
+  flex-shrink: 0;
+}
+
+.country-list-container {
+  max-height: 700px;
+  max-width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+}
