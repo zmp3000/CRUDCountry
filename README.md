@@ -1,27 +1,31 @@
-# CountriesApp
+# Country Manager Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+## Установка и запуск
 
-## Development server
+1. **Клонирование репозитория**:
+   ```bash
+   git clone https://github.com/zmp3000/CRUDCountry.git
+   cd CRUDCountry
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+   
+2. **Установка зависимостей**:
+   
+   ```bash
+   npm install
 
-## Code scaffolding
+3. **Запуск проекта**:
+   
+   ```bash
+   npm run json-server
+   ng s
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. **Открытие в браузере**
 
-## Build
+   Перейти по ссылке-адресу, представленной в командной строке
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+ ## Инструкция по использованию
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ В поле на экране введите название страны. Длина слова не должна превышать 255 символов, а само название не должно состоять из пробелов.
+ После этого нажимаете "Save", эта страна появится внизу списка справа. Для редактирования нажмите на название и измените название. Для
+ удаления справа от названия есть кнопка "Delete". Нажмёте её, появится предупреждение об необходимости этого, если вы точно уверены - нажимаете "OK".
