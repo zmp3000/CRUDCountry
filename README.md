@@ -1,31 +1,31 @@
 # Country Manager Application
 
-## Установка и запуск
+## Setup and running
 
-1. **Клонирование репозитория**:
+1. **Cloning the repository**:
    ```bash
    git clone https://github.com/zmp3000/CRUDCountry.git
    cd CRUDCountry
 
    
-2. **Установка зависимостей**:
+2. **Installing dependencies**:
    
    ```bash
    npm install
 
-3. **Запуск проекта**:
+3. **Running the project**:
    
    ```bash
    npm run json-server
    ng s
 
-4. **Открытие в браузере**
+4. **Opening in the browser**
 
-   Перейти по ссылке-адресу, представленной в командной строке
+   Navigate to the URL provided in the command line.
 
 
- ## Инструкция по использованию
+ ## Usage instructions
 
- В поле на экране введите название страны. Длина слова не должна превышать 255 символов, а само название не должно состоять из пробелов.
- После этого нажимаете "Save", эта страна появится внизу списка справа. Для редактирования нажмите на название и измените название. Для
- удаления справа от названия есть кнопка "Delete". Нажмёте её, появится предупреждение об необходимости этого, если вы точно уверены - нажимаете "OK".
+Enter the country name in the field on the screen. The word length should not exceed 255 characters, and the name should not consist of spaces only.
+After that, press "Save", and this country will appear at the bottom of the right list. To edit, click on the name and change the name. To
+delete, there is a "Delete" button to the right of the name. Click it, and a warning will appear about the need for this. If you are sure, click "OK".
